@@ -444,7 +444,7 @@
           </p>
         </div>
         <div class="footer-social-container">
-          <p class="social-list-text">Social media</p>
+          <p class="footer-subtitle social-list-text">Social media</p>
           <ul class="footer-social-list">
             <li class="footer-social-list-item">
               <a href="" class="footer-social-list-link">
@@ -476,27 +476,27 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe-box">
-          <div class="subscribe-input-box-wrapper">
-            <label class="subscribe-box-label" for="user-subscribe-email"
-              >Subscribe</label
-            >
-            <input
-              class="subscribe-box-input"
-              type="email"
-              name="user-subscribe-email"
-              id="user-subscribe-email"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <button class="subscribe-box-submit" type="submit">
-            Subscribe
-            <svg class="subscribe-box-submit-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="footer-form-container">
+          <p class="footer-subtitle subscribe-text">Subscribe</p>
+          <form class="subscribe-box">
+            <label class="subscribe-box-label" for="user-subscribe-email"></label>
+              <input
+                class="subscribe-box-input"
+                type="email"
+                name="user-subscribe-email"
+                id="user-subscribe-email"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <button class="subscribe-box-submit" type="submit">
+              Subscribe
+              <svg class="subscribe-box-submit-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--===================BACKDROP=====================-->
@@ -512,19 +512,17 @@
         </p>
         <form class="modal-subscribe-form">
           <div class="subscribe-form-field-container">
-            <label class="subscribe-form-field-label" for="username"
-              >Name</label
-            >
+            <label class="subscribe-form-field-label" for="user-name">Name</label>
             <div class="subscribe-form-input-container">
               <input
                 class="subscribe-form-input"
                 type="text"
-                name="username"
+                name="user-name"
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
-                id="username"
+                id="user-name"
                 required
               />
-              <svg class="subscribe-form-field-icon" width="18" height="18">
+              <svg class="subscribe-form-field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
@@ -542,7 +540,7 @@
                 id="user-phone"
                 required
               />
-              <svg class="subscribe-form-field-icon" width="18" height="18">
+              <svg class="subscribe-form-field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -559,12 +557,12 @@
                 id="user-email"
                 required
               />
-              <svg class="subscribe-form-field-icon" width="18" height="18">
+              <svg class="subscribe-form-field-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="subscribe-form-field-container">
+          <div class="subscribe-form-field-container textarea-container">
             <label class="subscribe-form-field-label" for="user-comment"
               >Comment</label
             >
@@ -580,12 +578,12 @@
             <input
               class="subscribe-form-checkbox visually-hidden"
               type="checkbox"
-              name="privacy-policy"
-              id="privacy-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="subscribe-form-checkbox-label" for="privacy-policy">
+            <label class="subscribe-form-checkbox-label" for="user-privacy">
               <span class="subscribe-form-own-checkbox">
                 <svg
                   class="subscribe-form-own-checkbox-icon"

@@ -401,7 +401,7 @@ address {
 .page-logo-and-text {
     margin-right: 120px;
 }
-.social-list-text {
+.footer-subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -447,17 +447,8 @@ address {
     display: flex;
     column-gap: 24px;
 }
-.subscribe-box-label {
-    margin-bottom: 16px;
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-}
 .subscribe-box-input {
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
@@ -472,26 +463,28 @@ address {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 .subscribe-box-submit {
     min-width: 165px;
     height: 40px;
-    border-radius: 4px;
     padding: 8px 24px;
     border-radius: 4px;
     padding: 8px 24px;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+    cursor: pointer;
     border: none;
+    border-radius: 4px;
     background-color: #4d5ae5;
     display: flex;
-    gap: 16px;
-    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -499,7 +492,9 @@ address {
 .subscribe-box-submit:focus {
     background-color: #31d0aa;
 }
-    
+.subscribe-box-submit-icon {
+    margin-left: 16px;
+}
 
 /*=================BACKDROP===================*/
 
@@ -532,24 +527,30 @@ address {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
     position: absolute;
-    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     background-color: #e7e9fc;
     fill: #2e2f42;
-    border: 1px;
-    border-color: rgba(0, 0, 0, 0.1);
-    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
     line-height: 0;
     top: 24px;
     right: 24px;
-    transition: backgound-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404bbf;
     fill: #ffffff;
+}
+.modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-subscribe-text {
     font-weight: 500;
@@ -566,7 +567,7 @@ address {
 .subscribe-form-field-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
@@ -578,7 +579,8 @@ address {
     border-radius: 4px;
     height: 40px;
     background-color: transparent;
-    padding-left: 37px;
+    outline: transparent;
+    padding-left: 38px;
     margin-bottom: 8px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -589,6 +591,7 @@ address {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-form-input-container {
     position: relative;
@@ -603,12 +606,20 @@ address {
 {
     fill: #4d5ae5;
 }
+.textarea-container {
+    margin-bottom: 16px;
+}
 .subscribe-form-message {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
     height: 120px;
     background-color: transparent;
+    outline: transparent;
     resize: none;
     padding: 8px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,14 +631,14 @@ address {
 .subscribe-form-message::placeholder {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
 }
 .subscribe-form-checkbox-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 
@@ -651,6 +662,7 @@ address {
     background-color: #404bbf;
     border-color: #404bbf;
     fill: #f4f4fd;
+    border: none;
 }
 .subscribe-form-checkbox:focus + .subscribe-form-checkbox-label .subscribe-form-own-checkbox {
     outline: 2px solid rgba(0, 0, 255, 0.5);
